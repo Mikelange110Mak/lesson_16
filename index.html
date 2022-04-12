@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+         <div class="first-section">
+            <div class="first-form first-form_set">
+               <h2 class="first-form__title">
+                  Make an appointment
+               </h2>
+               <form class="first-form__form" action="#">
+                  <input tabindex="1" class="first-form__name" required placeholder="Name" autocomplete="off"
+                     type="text" name="username">
+                  <input tabindex="2" class="first-form__email" required placeholder="Email" type="text"
+                     name="usermail">
+                  <input tabindex="3" class="first-form__phone" required placeholder="Phone Number" name="userphone"
+                     autocomplete="off" value="" type="tel">
+                  <input tabindex="4" class="first-form__service" required placeholder="Select Service" type="text"
+                     name="select-service">
+                  <textarea tabindex="5" class="first-form__text"
+                     placeholder="Tell us about your puppers include his/her name" name="storytell"></textarea>
+                  <button class="first-form__button">Make an Appointment</button>
+               </form>
+            </div>
+         </div>
+         <div class="second-section">
+            <div class="second-form second-form_set">
+               <h2 class="second-form__title">Summary</h2>
+               <p class="second-form__subtitle">Estimate Shipping and Tax</p>
+               <p class="second-form__text">Enter your destination to get a shipping estimate.</p>
+               <form class="second-form__form" action="#">
+                  <div class="second-form__country">
+                     <label class="second-form__country-label" for="country">Country</label>
+                     <select class="second-form__country-select-area" name="country-select" id="country">
+                        <option class="second-form__country-option" value="ukr">Ukraine</option>
+                        <option class="second-form__country-option" value="kaz">Kazakhstan</option>
+                        <option class="second-form__country-option" value="pol">Poland</option>
+                        <option class="second-form__country-option" value="aus" selected>Australia</option>
+                     </select>
+                  </div>
+                  <div class="second-form__habitat">
+                     <label class="second-form__place-label" for="second-form-place">State/Province</label>
+                     <input class="second-form__place-area" id="second-form-place" type="text" required
+                        name="user-state">
+                  </div>
+                  <div class="second-form__zip">
+                     <label class="second-form__zip-label" for="second-form-zip">Zip/Postal Code</label>
+                     <input class="second-form__postcode-area" id="second-form-zip" type="text" required
+                        name="user-postcode">
+                  </div>
+                  <div class="second-form__radio">
+                     <p class="second-form__radio-title">Standard Rate</p>
+                     <input class="second-form__radio-input" id="radio-one" checked name="price" value="one"
+                        type="radio">
+                     <label class="second-form__radio-label" for="radio-one">Price may vary depending on the
+                        item/destination. Shop Staff will contact you. $21.00</label>
+                     <p class="second-form__radio-title">Pickup from store</p>
+                     <input class="second-form__radio-input" id="radio-two" name="price" value="two" type="radio">
+                     <label class="second-form__radio-label" for="radio-two">1234 Street Adress City Address, 1234
+                        $0.00</label>
+                  </div>
+                  <div class="second-form__discount">
+                     <h2 class="second-form__discount-title">Apply Discount Code</h2>
+                     <label class="second-form__discount-label" for="discount">Enter discount code</label>
+                     <input class="second-form__discount-area" id="discount" type="text" required name="disc-code"
+                        placeholder="Enter Discount code">
+                  </div>
+                  <button class="second-form__button">Apply Discount</button>
+               </form>
+            </div>
+         </div>
+         <div class="third-section">
+            <div class="third-form third-form_set">
+               <h2 class="third-form__title">Registered Customers</h2>
+               <p class="third-form__subtitle">If you have an account, sign in with your email address.</p>
+               <form class="third-form__form" action="#">
+                  <label class="third-form__username-label" for="username-third">Email</label>
+                  <input class="third-form__username-area" id="username-third" required autocomplete="off"
+                     name="username-third" placeholder="Your Name" type="text">
+                  <label class="third-form__password-label" for="password-third">Password</label>
+                  <input class="third-form__password-area" id="password-third" required autocomplete="off"
+                     name="password-third" placeholder="Your Name" type="password">
+                  <div class="third-form__button">
+                     <button class="third-form__button-item">Sign In</button>
+                     <a class="third-form__button-forgot" href="#">Forgot Your Password?</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
